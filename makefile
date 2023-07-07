@@ -6,3 +6,5 @@ push:
 	docker tag zhijieuam/static-web:$(VERSION) zhijieuam/static-web:latest
 	docker push zhijieuam/static-web:$(VERSION)
 	docker push zhijieuam/static-web:latest
+
+run: push
