@@ -1,5 +1,8 @@
 VERSION := $(shell git log --pretty=format:'' | wc -l)
 
+build:
+	docker build -t zhijieuam/static-web:$(VERSION) .
+
 push:
 	docker login
 	docker build -t zhijieuam/static-web:$(VERSION) .
